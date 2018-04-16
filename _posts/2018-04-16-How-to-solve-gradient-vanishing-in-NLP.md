@@ -6,7 +6,7 @@
 
 
 
-![](https://github.com/ChanghoPaeon/ChanghoPaeon.github.io/tree/master/assets/images/simple-nn-dev-weight-respect-to-1.png)
+![](https://github.com/ChanghoPaeon/ChanghoPaeon.github.io/blob/master/assets/images/simple-nn-dev-weight-respect-to-1.png)
 
 $$W_{1}$$ 에 대한 편미분은 아래와 같음.
 
@@ -41,19 +41,18 @@ $$sigmoid(x)$$ 를 $$t$$ 로 치환하여, 미분하면, $$sigmoid(x)(1-sigmoid(
 ![](https://github.com/ChanghoPaeon/ChanghoPaeon.github.io/tree/master/assets/images/dev-of-simoid.png)
 
 
-다음은 vaniala rnn 등 여러 곳에서 사용되는 activation funtion인 $$tanh$$ 의 정의이다.
+다음은 vanila rnn 등 여러 곳에서 사용되는 activation funtion인 $$tanh$$ 의 정의이다.
 
-$$\begin{align} \tanh(x) = \frac{e^x - e^{-x}}{e^x+e^{-x}}\tag{8.1}\end{align}$$
+$$ \tanh(x) = \frac{e^x - e^{-x}}{e^x+e^{-x}}$$
 
-분모 분자에 &&e^{-x}&& 를 곱하면, 
+분모 분자에  $$e^{-x}$$ 를 곱하면, 
 
-$$\begin{align} \tanh(x) = \frac{1 - e^{-2x}}{1+e^{-2x}}end{align}$$
+$$ \tanh(x) = \frac{1 - e^{-2x}}{1+e^{-2x}}$$
 
-을 얻는다.
+을 얻는다. 이를 미분하면, 
 
-이를 미분하면, 
+$$ \tanh'(x) = (1+tanh(x))(1-tanh(x))$$
 
-$$\begin{align} \tanh'(x) = (1+tanh(x))(1-tanh(x))end{align}$$
 가 되어 Gradient Vanishing Problem 이 발생함을 쉽게 확인 할 수 있다.
 
 
@@ -66,8 +65,21 @@ $$ ReLU(x) =  max(x, 0)$$
 ![](https://github.com/ChanghoPaeon/ChanghoPaeon.github.io/tree/master/assets/images/relu.png)
 
 
-##### ReLU 의 derivation
+##### ReLU의 derivation
 
+
+
+
+
+### rnn with ReLU
+
+
+
+### LSTM
+
+
+
+### GRU
 
 
 
