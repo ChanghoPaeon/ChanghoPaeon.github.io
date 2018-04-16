@@ -1,5 +1,5 @@
 ---
-title:  How to Solve Gradient Vanishing in NLP
+title: Orthogonal Initialization
 date: 2018-04-15
 categories:
 - NLP
