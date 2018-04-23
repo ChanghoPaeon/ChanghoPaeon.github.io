@@ -21,7 +21,7 @@ tags:
 
 $$W_{1}$$ 에 대한 편미분은 아래와 같음.
 
-$$\begin{align}\frac{\partial Loss}{\partial W_1}& = \frac{\partial Loss}{\partial f(z_3)} \cdot \frac{\partial f(z_3)}{\partial f(z_2)} \cdot \frac{\partial f(z_2)}{\partial f(z1)} \cdot \frac{\partial f(z_1)}{\partial W_1} \\
+$$\begin{align}\frac{\partial Loss}{\partial W_1}& = \frac{\partial Loss}{\partial f(z_3)} \cdot \frac{\partial f(z_3)}{\partial f(z_2)} \cdot \frac{\partial f(z_2)}{\partial f(z_1)} \cdot \frac{\partial f(z_1)}{\partial W_1} \\
 & = \frac{\partial Loss}{\partial f(z_3)} \cdot f'(z_3) \cdot W_3 \cdot f'(z_2) \cdot W_2 \cdot f'(z_1) \cdot W_1 \end{align}$$
 
  Activation funtion 으로 많이 사용 되는 sigmoid 함수는 다음과 같다.

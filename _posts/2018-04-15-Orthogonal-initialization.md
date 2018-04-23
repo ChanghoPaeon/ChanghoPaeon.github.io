@@ -67,7 +67,7 @@ $$proof)$$ $$x$$를 orthogonal matrix $$Q$$의 eigenvector라 하고 대응되�
 
 앞서 RNN 에서의 gradient vanishing problem은 chain rule로 계산된 Loss 에 대한 weight의 편미분,
 
-$$\begin{align}\frac{\partial Loss}{\partial W}& = \frac{\partial Loss}{\partial f(z_3)} \cdot \frac{\partial f(z_3)}{\partial f(z_2)} \cdot \frac{\partial f(z_2)}{\partial f(z1)} \cdot \frac{\partial f(z_1)}{\partial W} \\
+$$\begin{align}\frac{\partial Loss}{\partial W}& = \frac{\partial Loss}{\partial f(z_3)} \cdot \frac{\partial f(z_3)}{\partial f(z_2)} \cdot \frac{\partial f(z_2)}{\partial f(z_1)} \cdot \frac{\partial f(z_1)}{\partial W} \\
 & = \frac{\partial Loss}{\partial f(z_3)} \cdot f'(z_3) \cdot W \cdot f'(z_2) \cdot W \cdot f'(z_1) \cdot W \end{align}$$
 
 에서 activation function $$f'(z)$$의 값들이 작아 발생함을 논증하였다. 그럼 vanising과 exploding 을 막기위해 activation function 으로 $$identity\ function$$을 사용하면 어떻게 될까? 위 식은 아래와 같이 바뀔 것이다.
